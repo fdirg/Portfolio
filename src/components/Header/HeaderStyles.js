@@ -9,6 +9,7 @@ export const HeaderWrapper = styled.header`
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.5s;
 `;
 
 export const HeaderNav = styled.nav`

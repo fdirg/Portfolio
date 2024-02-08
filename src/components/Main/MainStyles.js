@@ -8,4 +8,5 @@ export const MainWrapper = styled.main`
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
+  gap: 1rem;
 `;

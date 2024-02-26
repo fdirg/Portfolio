@@ -1,54 +1,86 @@
 import React from "react";
-import {
-  SkillsContainer,
-  SkillsImgs,
-  SkillsTitle,
-  SkillsWrapper,
-} from "./SkillsStyles";
-import Html from "../../assets/HTML.svg";
-import Css from "../../assets/CSS3.svg";
-import Js from "../../assets/Javascript.png";
-import ReactImg from "../../assets/React.png";
+import { SkillsImgs, SkillsTitle, SkillsWrapper } from "./SkillsStyles";
+import { FaHtml5, FaCss3Alt, FaReact, FaBootstrap } from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io5";
+import { SiStyledcomponents, SiTailwindcss, SiRedux } from "react-icons/si";
+import { RiToolsLine } from "react-icons/ri";
 
 const Skills = () => {
   const tools = [
     {
-      id: 1,
-      img: { Html },
-      alt: "Html",
+      category: "frontend",
+      tools: [
+        {
+          id: 1,
+          icon: <FaHtml5 />,
+          name: "Html",
+        },
+        {
+          id: 2,
+          icon: <FaCss3Alt />,
+          name: "Css",
+        },
+        {
+          id: 3,
+          icon: <IoLogoJavascript />,
+          name: "Javascript",
+        },
+        {
+          id: 4,
+          icon: <FaReact />,
+          name: "React",
+        },
+      ],
     },
     {
-      id: 2,
-      img: { Css },
-      alt: "Css",
+      category: "css",
+      tools: [
+        {
+          id: 5,
+          icon: <SiStyledcomponents />,
+          name: "Styled components",
+        },
+        {
+          id: 6,
+          icon: <SiTailwindcss />,
+          name: "Tailwind",
+        },
+        {
+          id: 7,
+          icon: <FaBootstrap />,
+          name: "Bootstrap",
+        },
+      ],
     },
     {
-      id: 3,
-      img: { Js },
-      alt: "Javascript",
-    },
-    {
-      id: 4,
-      img: { ReactImg },
-      alt: "React",
+      category: "state",
+      tools: [
+        {
+          id: 8,
+          icon: <SiRedux />,
+          name: "Redux Toolkit",
+        },
+      ],
     },
   ];
 
   return (
     <>
       <SkillsWrapper id="skills">
-        <SkillsContainer>
-          <SkillsTitle>
-            <h2>Conocimientos</h2>
-          </SkillsTitle>
-          <SkillsImgs>
-            {tools.map((tool) => (
-              <div key={tool.id}>
-                <img src={tool.img} alt={tool.alt} />
-              </div>
-            ))}
-          </SkillsImgs>
-        </SkillsContainer>
+        <SkillsTitle>
+          <h2>Skills</h2>
+          <i>
+            <RiToolsLine />
+          </i>
+        </SkillsTitle>
+        <SkillsImgs>
+          {tools.map((tool) => (
+            <div key={tool.id}>
+              <i>{tool.icon}</i>
+              <span>{tool.name}</span>
+            </div>
+          ))}
+        </SkillsImgs>
       </SkillsWrapper>
     </>
   );

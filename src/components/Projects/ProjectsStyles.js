@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const AboutMeWrapper = styled.section`
+export const ProjectsWrapper = styled.section`
   width: 600px;
   display: flex;
   justify-content: center;
@@ -8,7 +8,7 @@ export const AboutMeWrapper = styled.section`
   flex-direction: column;
 `;
 
-export const AboutMeTitle = styled.div`
+export const ProjectsTitle = styled.div`
   width: 100%;
   display: flex;
   justify-content: flex-start;
@@ -19,7 +19,6 @@ export const AboutMeTitle = styled.div`
     font-weight: 400;
   }
   i {
-    font-size: 0.9rem;
     display: flex;
     justify-content: center;
     align-items: center;

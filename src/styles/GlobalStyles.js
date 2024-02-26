@@ -4,11 +4,14 @@ export const GlobalStyles = createGlobalStyle`
 
 :root {
     --bg-color: #1c1f22;
-    --black-color: #232625;
+    --white-color: #f5f5f5;
+    --gray-color: #373d43;
+    --2nd-gray-color: #f8f9fa;
+    --orange-color: #ff9e00;
+    --yellow-color: #ffd100;
     --green-color: #35403A;
     --2nd-green-color: #4D5950;
-    --gray-color: #A3A69C;
-    --white-color: #BFBFB8;
+    
 }
 
 * {
@@ -22,7 +25,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
     body {
-    background: var(--black-color);
+    background: var(--bg-color);
     color: var(--white-color);
     -webkit-tap-highlight-color: transparent;
     overflow-x: hidden;

@@ -2,43 +2,39 @@ import React from "react";
 import {
   HeroCardWrapper,
   HeroImageWrapper,
+  HeroSocialsWrapper,
   HeroTextWrapper,
+  HeroTitleWrapper,
   HeroWrapper,
 } from "./HeroStyles";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
 import FotoPerfil from "../../assets/fotoperfil.jpg";
+import ItemsSocial from "../ItemsSocial/ItemsSocial";
 
 const Hero = () => {
-  const socials = [
-    { id: 1, icon: <FaGithub />, link: "https://github.com/fdirg" },
-    {
-      id: 2,
-      icon: <FaLinkedin />,
-      link: "https://www.linkedin.com/in/federicomartinirungaray/",
-    },
-  ];
+  const socials = ItemsSocial();
+  const { id, text, icon, link } = socials;
 
   return (
     <>
-      <HeroWrapper>
+      <HeroWrapper id="home">
         <HeroCardWrapper>
-          <HeroTextWrapper>
-            <h1>Hola, Soy Federico Irungaray</h1>
-            <p>
-              Programador <span>Front-end, </span> y estudiante de programacion.
-              Tengo 24 años y soy de la ciudad de Rosario, Santa Fe, Argentina.
-            </p>
-            <div>
-              {socials.map((social) => (
-                <a key={social.id} href={social.link} target="_blank">
-                  {social.icon}
-                </a>
-              ))}
-            </div>
-          </HeroTextWrapper>
           <HeroImageWrapper>
             <img src={FotoPerfil} alt="Foto de perfil" />
           </HeroImageWrapper>
+          <HeroTextWrapper>
+            <HeroTitleWrapper>
+              <h1>Federico Irungaray</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </HeroTitleWrapper>
+            <HeroSocialsWrapper>
+              {socials.map(({ id, text, icon, link }) => (
+                <a key={id} href={link}>
+                  {text}
+                  <i>{icon}</i>
+                </a>
+              ))}
+            </HeroSocialsWrapper>
+          </HeroTextWrapper>
         </HeroCardWrapper>
       </HeroWrapper>
     </>

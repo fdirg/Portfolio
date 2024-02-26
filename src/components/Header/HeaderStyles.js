@@ -6,18 +6,32 @@ export const HeaderWrapper = styled.header`
   position: sticky;
   top: 0;
   z-index: 100;
+  background-color: var(--bg-color);
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 0.5s;
+  .container {
+    width: 600px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+`;
+
+export const HeaderHome = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
 `;
 
 export const HeaderNav = styled.nav`
-  width: 1000px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  font-weight: 500;
+  font-weight: 400;
+  font-size: 0.9rem;
   ul {
     display: flex;
     justify-content: center;
@@ -32,9 +46,9 @@ export const HeaderNav = styled.nav`
       bottom: -5px;
       left: 0;
       width: 0;
-      height: 2px;
+      height: 1px;
       background-color: var(--white-color);
-      transition: width 0.8s ease;
+      transition: width 0.3s ease;
     }
 
     &:hover::before {

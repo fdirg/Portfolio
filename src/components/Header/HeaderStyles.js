@@ -20,10 +20,23 @@ export const HeaderWrapper = styled.header`
 `;
 
 export const HeaderHome = styled.div`
+  max-width: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.1rem;
+  opacity: ${({ mostrar }) => (mostrar ? "1" : "0")};
+  visibility: ${({ mostrar }) => (mostrar ? "visible" : "hidden")};
+  transition: all 0.3s;
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
 `;
 
 export const HeaderNav = styled.nav`

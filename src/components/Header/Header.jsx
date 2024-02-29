@@ -1,17 +1,22 @@
 import React from "react";
 import { HeaderNav, HeaderWrapper, HeaderHome } from "./HeaderStyles";
 import ItemsHeader from "../ItemsHeader/ItemsHeader";
+import FotoPerfil from "../../assets/fotoperfil.jpg";
+import Scroll from "../Scroll/Scroll";
 
 const Header = () => {
   const items = ItemsHeader();
-  const { id, name, link } = items;
+
+  const { mostrarEtiqueta } = Scroll();
 
   return (
     <>
       <HeaderWrapper>
-        <div className="container">
-          <HeaderHome>
-            <a href="#home">/F</a>
+        <div className="container" mostrar={mostrarEtiqueta}>
+          <HeaderHome mostrar={mostrarEtiqueta}>
+            <a href="#home">
+              <img src={FotoPerfil} alt="" />
+            </a>
           </HeaderHome>
           <HeaderNav>
             <ul>

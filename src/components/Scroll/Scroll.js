@@ -5,7 +5,7 @@ const Scroll = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const alturaMostrarEtiqueta = 200;
+      const alturaMostrarEtiqueta = 150;
 
       if (window.scrollY > alturaMostrarEtiqueta) {
         setMostrarEtiqueta(true);

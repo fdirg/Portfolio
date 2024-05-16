@@ -1,5 +1,5 @@
 import React from "react";
-import Curriculum from "../../assets/CV-Federico-Irungaray.pdf";
+import Curriculum from "../../assets/CV Federico Irungaray.pdf";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdContactPage } from "react-icons/md";
 

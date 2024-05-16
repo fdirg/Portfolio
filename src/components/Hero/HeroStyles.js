@@ -46,14 +46,13 @@ export const HeroTitleWrapper = styled.div`
   flex-direction: column;
   gap: 0.4rem;
   h1 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 500;
   }
-  p {
-    max-width: 400px;
-    font-size: 0.9rem;
-    font-weight: 300;
-    opacity: 0.9;
+  span {
+    opacity: 0.8;
+    font-size: 0.8rem;
+    font-weight: 400;
   }
 `;
 
@@ -62,21 +61,22 @@ export const HeroSocialsWrapper = styled.div`
   justify-content: center;
   align-items: center;
   gap: 0.8rem;
-  a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row-reverse;
-    gap: 8px;
-    color: var(--white-color);
-    font-size: 0.9rem;
-    opacity: 0.8;
-    padding: 8px 12px;
-    border: 1px solid var(--gray-color);
-    border-radius: 10px;
-    transition: all 0.2s;
-  }
-  a:hover {
+`;
+
+export const LinkHero = styled.a`
+  background-color: var(--gray-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: var(--white-color);
+  font-size: 0.9rem;
+  opacity: 0.8;
+  padding: 8px 12px;
+  border: 1px solid var(--2nd-gray);
+  border-radius: 10px;
+  transition: all 0.3s;
+  &:hover {
     box-shadow: 0px 6px 1px rgba(0, 0, 0, 0.5);
   }
   i {

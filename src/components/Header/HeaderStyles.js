@@ -45,6 +45,8 @@ export const HeaderNav = styled.nav`
   align-items: center;
   font-weight: 400;
   font-size: 0.9rem;
+  transition: transform 0.5s;
+  transform: ${({ move }) => (move ? "translateX(0px)" : "translateX(-300px)")};
   ul {
     display: flex;
     justify-content: center;

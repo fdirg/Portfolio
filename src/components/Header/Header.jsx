@@ -18,7 +18,7 @@ const Header = () => {
               <img src={FotoPerfil} alt="" />
             </a>
           </HeaderHome>
-          <HeaderNav>
+          <HeaderNav move={mostrarEtiqueta}>
             <ul>
               {items.map(({ id, name, link }) => (
                 <li key={id}>

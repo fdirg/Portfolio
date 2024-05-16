@@ -6,8 +6,11 @@ export const GlobalStyles = createGlobalStyle`
     --bg-color: #1c1f22;
     --title-color: #f1bd55;
     --white-color: #f5f5f5;
+    --2nd-white: #b5b5b5;
     --gray-color: #373d43;
-    --2nd-gray-color: #f8f9fa;
+    --2nd-gray: #707070;
+    --blue-color: #76e1ff;
+    --2nd-blue: #35BEF8;
     --orange-color: #ff9e00;
 }
 

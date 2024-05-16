@@ -6,6 +6,7 @@ import {
   HeroTextWrapper,
   HeroTitleWrapper,
   HeroWrapper,
+  LinkHero,
 } from "./HeroStyles";
 import FotoPerfil from "../../assets/fotoperfil.jpg";
 import ItemsSocial from "../ItemsSocial/ItemsSocial";
@@ -24,14 +25,14 @@ const Hero = () => {
           <HeroTextWrapper>
             <HeroTitleWrapper>
               <h1>Federico Irungaray</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <span>Rosario, Santa fe, Argentina.</span>
             </HeroTitleWrapper>
             <HeroSocialsWrapper>
               {socials.map(({ id, text, icon, link }) => (
-                <a key={id} href={link}>
-                  {text}
+                <LinkHero key={id} href={link} target="_blank">
                   <i>{icon}</i>
-                </a>
+                  {text}
+                </LinkHero>
               ))}
             </HeroSocialsWrapper>
           </HeroTextWrapper>

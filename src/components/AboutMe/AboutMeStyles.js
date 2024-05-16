@@ -1,10 +1,6 @@
 import styled from "styled-components";
-import {
-  LinkProjects,
-  ProjectCard,
-  ProjectsTitle,
-  ProjectsWrapper,
-} from "../Projects/ProjectsStyles";
+import { ProjectsTitle, ProjectsWrapper } from "../Projects/ProjectsStyles";
+import { ProjectCard } from "../CardProject/CardProjectStyles";
 
 export const AboutMeWrapper = styled(ProjectsWrapper)``;
 

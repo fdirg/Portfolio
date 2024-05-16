@@ -1,10 +1,6 @@
 import styled from "styled-components";
-import {
-  ProjectCard,
-  ProjectsCardsWrapper,
-  ProjectsTitle,
-  ProjectsWrapper,
-} from "../Projects/ProjectsStyles";
+import { ProjectsTitle, ProjectsWrapper } from "../Projects/ProjectsStyles";
+import { ProjectCard } from "../CardProject/CardProjectStyles";
 
 export const SkillsWrapper = styled(ProjectsWrapper)``;
 

@@ -46,12 +46,12 @@ export const HeaderNav = styled.nav`
   font-weight: 400;
   font-size: 0.9rem;
   transition: transform 0.5s;
-  transform: ${({ move }) => (move ? "translateX(40px)" : "translateX(-40px)")};
+  transform: ${({ move }) => (move ? "translateX(33px)" : "translateX(-43px)")};
   ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 1.8rem;
   }
   li {
     list-style: none;

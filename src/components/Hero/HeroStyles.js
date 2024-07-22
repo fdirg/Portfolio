@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const HeroWrapper = styled.section`
-  width: 600px;
   display: flex;
   justify-content: center;
   align-items: center;

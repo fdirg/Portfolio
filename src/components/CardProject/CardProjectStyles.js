@@ -3,6 +3,7 @@ import { LinkHero } from "../Hero/HeroStyles";
 
 export const ProjectCard = styled.div`
   width: 100%;
+  padding: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,6 +18,9 @@ export const ProjectCard = styled.div`
         transition: transform 0.5s;
       }
     }
+  }
+  @media (max-width: 670px) {
+    max-width: 500px;
   }
 `;
 
@@ -37,6 +41,9 @@ export const ProjectCardImage = styled.div`
     transform: translateX(10px) translateY(10px);
     transition: transform 0.5s;
     transition-delay: 0.5s;
+  }
+  @media (max-width: 670px) {
+    max-width: 250px;
   }
 `;
 
@@ -59,6 +66,18 @@ export const ProjectCardDescription = styled.div`
   span {
     color: var(--white-color);
     font-size: 1rem;
+  }
+  @media (max-width: 670px) {
+    h4 {
+      font-size: 1rem;
+    }
+    p {
+      max-width: 200px;
+      font-size: 0.8rem;
+    }
+    span {
+      font-size: 0.9rem;
+    }
   }
 `;
 

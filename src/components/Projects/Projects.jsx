@@ -10,7 +10,7 @@ import CardProject from "../CardProject/CardProject";
 const Projects = () => {
   return (
     <>
-      <ProjectsWrapper>
+      <ProjectsWrapper id="proyectos">
         <ProjectsTitle>
           <h2>Proyectos</h2>
           <i>

@@ -1,10 +1,6 @@
 import React from "react";
 import {
   AboutMeDescription,
-  AboutMeEducationCard,
-  AboutMeEducationWrapper,
-  AboutMeExperienceCard,
-  AboutMeTextWrapper,
   AboutMeTitle,
   AboutMeWrapper,
 } from "./AboutMeStyles";
@@ -20,32 +16,27 @@ const AboutMe = () => {
             <FaRegHand />
           </i>
         </AboutMeTitle>
-        <AboutMeTextWrapper>
-          <AboutMeDescription>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Necessitatibus, dolor?
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit,
-              dolor.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
-              iusto.
-            </p>
-          </AboutMeDescription>
-          <AboutMeExperienceCard>
-            <h2>Experiencia laboral</h2>
-            <h3>Fotografo - Expertias Inmobiliaria</h3>
-            <span>2020 - Act.</span>
-            <span>. Fotografia profensional.</span>
-            <span>. Uso de Lightroom, Photoshop.</span>
-          </AboutMeExperienceCard>
-        </AboutMeTextWrapper>
-        <AboutMeEducationWrapper>
-          <AboutMeEducationCard></AboutMeEducationCard>
-        </AboutMeEducationWrapper>
+        <AboutMeDescription>
+          <p>
+            👋¡Buenas! Soy estudiante avanzado en la Tecnicatura de Programación
+            en la Universidad Tecnológica Nacional de Rosario, enfocado en el
+            Análisis de datos.
+          </p>
+          <p>
+            Me motiva el conocimiento de herramientas nuevas, asi como la
+            especialización y perfección en aquellas que ya manejo, teniendo la
+            habilidad de aprendizaje rápido.
+          </p>
+          <p>
+            🧠Poseo un buen pensamiento critico, como también capacidad
+            analitica, atencion al detalle y gestion del tiempo. Adaptabilidad y
+            resolutivo antes problemas.
+          </p>
+          <p>
+            Busco un continuo crecimiento profesional, aplicar y expandir mis
+            conocimientos y contribuir al éxito de un equipo.
+          </p>
+        </AboutMeDescription>
       </AboutMeWrapper>
     </>
   );

@@ -35,9 +35,4 @@ export const GlobalStyles = createGlobalStyle`
        text-decoration: none;
        color: var(--white-color);
     }
-
-    li {
-    list-style: none;
-    }
-
 `;

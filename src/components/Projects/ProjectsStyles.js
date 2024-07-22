@@ -36,4 +36,7 @@ export const ProjectsCardsWrapper = styled.div`
   align-items: flex-start;
   flex-direction: column;
   gap: 1rem;
+  @media (max-width: 670px) {
+    align-items: center;
+  }
 `;

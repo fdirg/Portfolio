@@ -46,12 +46,15 @@ export const HeaderNav = styled.nav`
   font-weight: 400;
   font-size: 0.9rem;
   transition: transform 0.5s;
-  transform: ${({ move }) => (move ? "translateX(0px)" : "translateX(-300px)")};
+  transform: ${({ move }) => (move ? "translateX(40px)" : "translateX(-40px)")};
   ul {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2rem;
+  }
+  li {
+    list-style: none;
   }
   a {
     position: relative;
@@ -65,33 +68,11 @@ export const HeaderNav = styled.nav`
       background-color: var(--white-color);
       transition: width 0.3s ease;
     }
-
     &:hover::before {
       width: 100%;
     }
   }
-`;
-
-export const HeaderResumeContainer = styled.div`
-  margin-right: 2rem;
-  padding: 0.9rem 1.8rem;
-  font-weight: 500;
-  background-color: var(--green-color);
-  border-radius: 2rem;
-  border: 1px solid var(--2nd-green-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition-duration: 0.5s;
-  &:hover {
-    background-color: var(--2nd-green-color);
-    border: 1px solid var(--gray-color);
-  }
-  i {
-    font-size: 1.2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 6px;
+  @media (max-width: 670px) {
+    display: none;
   }
 `;

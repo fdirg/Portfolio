@@ -2,6 +2,8 @@
 import GyF from "../../assets/gestion-empresarial.png";
 import expense from "../../assets/expense.png";
 import qlik1 from "../../assets/visualizacion_de_ventas_1.jpg";
+import mbtc from "../../assets/mbtc.png";
+import ba from "../../assets/ba.png";
 import { BsBoxArrowInUpRight } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa";
 import {
@@ -28,13 +30,13 @@ const CardProject = () => {
     <>
       <ProjectCard>
         <ProjectCardImage>
-          <img src={qlik1} alt="Foto proyecto Qlik" />
+          <img src={mbtc} alt="Foto proyecto MBTB" />
         </ProjectCardImage>
         <ProjectCardDescription>
-          <h4>Dataset Mi Bici Tu Bici</h4>
+          <h4>Analisis MiBiciTuBici</h4>
           <p>
-            Proyecto realizado con los datos proporcionados por la Municipalidad
-            de Rosario sobre el sistema publico Mi Bici Tu Bici. ETL con Python
+            Análisis realizado con los datos proporcionados por la Municipalidad
+            de Rosario sobre el sistema publico MiBiciTuBici. ETL con Python
             (Pandas, Matplotlib) y dashboard con Power BI.
           </p>
           <ProjectCardTools>
@@ -44,7 +46,7 @@ const CardProject = () => {
           </ProjectCardTools>
           <ProjectCardLinks>
             <LinkProjects
-              href="https://github.com/fdirg/Proyecto_ANAC_DATASET"
+              href="https://github.com/fdirg/Proyecto_MiBiciTuBici_Dataset"
               target="_blank"
             >
               <i>
@@ -58,22 +60,23 @@ const CardProject = () => {
 
       <ProjectCard>
         <ProjectCardImage>
-          <img src={qlik1} alt="Foto proyecto Qlik" />
+          <img src={ba} alt="Foto proyecto ANAC" />
         </ProjectCardImage>
         <ProjectCardDescription>
-          <h4>Dataset ANAC</h4>
+          <h4>Analisis delitos CABA</h4>
           <p>
-            Proyecto realizado con los datos proporcionados por el instituto
-            ANAC. ETL con Python (Pandas, Matplotlib) y dashboard con Power BI.
+            Análisis realizado con los datos proporcionados por la Ciudad de
+            Buenos Aires sobre la cantidad de delitos entre 2018 y 2023.
+            Realizado con QlikSense, desde principio a fin.
           </p>
           <ProjectCardTools>
-            {anacTools.map((tool) => (
+            {contosoTool.map((tool) => (
               <img key={tool.id} src={tool.img} alt={tool.alt} />
             ))}
           </ProjectCardTools>
           <ProjectCardLinks>
             <LinkProjects
-              href="https://github.com/fdirg/Proyecto_ANAC_DATASET"
+              href="https://github.com/fdirg/Proyecto_Final_Jupi_Digital/tree/main"
               target="_blank"
             >
               <i>
